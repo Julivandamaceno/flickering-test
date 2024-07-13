@@ -1,5 +1,5 @@
 (() => {
-    var isCurrent = location.pathname == '/current';
+    var isCurrent = location.href.indexOf('current') != -1;
     var isSized = location.search == '?sized' || location.search == '?sized=true' && location.search != '?sized=false';
     var isGitHubHost = location.href.indexOf('github') != -1;
 
