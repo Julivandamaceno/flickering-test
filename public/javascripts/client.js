@@ -1,6 +1,7 @@
 (() => {
     var isCurrent = location.pathname == '/current';
     var isSized = location.search == '?sized' || location.search == '?sized=true' && location.search != '?sized=false';
+    var isGitHubHost = location.href.indexOf('github') != -1;
 
     if (isCurrent && !isSized) {
         document.getElementById('main-container').classList.remove('size-containers')
@@ -46,7 +47,9 @@
     }
 
     function makeRequest (dataType) {
-        fetch(`/${dataType}`)
+        var url = isGitHubHost ? `/flickering-test/${dataType}` : `/${dataType}`;
+
+        fetch(url)
             .then(response => response.text())
             .then(data => {
                 var container = document.getElementById(dataType);
