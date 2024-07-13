@@ -1,0 +1,342 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.open-sans-nu {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.main-container {
+  width: 467px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+}
+
+.base-container {
+  margin: 30px 0;
+  padding: 10px 20px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.fade {
+  transition: all linear 0.5s;
+}
+
+.show {
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.base-container-separator {
+  border-bottom: 1px solid #201F21;
+  padding-bottom: 30px;
+}
+
+.header {
+  background: #332163;
+  padding: 20px;
+}
+
+.header .profile-photo {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.header .greeting {
+  margin: 30px 0 10px 0;
+  font-size: 20px;
+}
+
+.header .controls {
+  padding-top: 15px;
+}
+
+.header .control-icon {
+  margin-right: 20px;
+}
+
+.header .control-icon.last {
+  margin-right: 0;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.balance-value {
+  font-size: 20px;
+}
+
+.balance-limit {
+  color: #736E79;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.balance-description {
+  margin-bottom: 10px;
+}
+
+.inline-action {
+  display: block;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+.inline-action .icon {
+  background: #201F21;
+  border-radius: 100%;
+  display: inline-flex;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 10px auto 20px;
+  align-items: center;
+}
+
+.inline-action .icon-image {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.card-actions,
+.disclaimer-banners {
+  margin: 10px;
+}
+
+.card-actions {
+  padding-bottom: 0;
+}
+
+.disclaimer-banners {
+  overflow-x: auto;
+  box-sizing: content-box;
+  padding-bottom: 0;
+}
+
+.disclaimer-banners::-webkit-scrollbar {
+  display: none;
+}
+
+
+.banner {
+  padding: 20px 15px;
+  background: #201F21;
+  border-radius: 20px;
+  width: 94%;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.banner.banner-carousel {
+  width: 75%;
+  margin-right: 20px;
+}
+.banner.banner-carousel.last {
+  margin-right: 0;
+}
+
+.banner-overflow {
+  width: 720px;
+}
+
+.card-action-text {
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.banner-text {
+  padding: 5px 20px;
+  line-height: 25px;
+}
+
+.highlight-text {
+  color: #A88AF9;
+}
+
+.credit-card .section-title {
+  margin-bottom: 25px;
+}
+
+.card-skeleton {
+  width: 100%;
+  clear: both;
+}
+
+.card-skeleton .line.first {
+  width: 100px;
+}
+
+.card-skeleton .line.second {
+  width: 200px;
+}
+
+.card-skeleton.balance .first {
+  margin-bottom: 30px;
+  width: 155px;
+}
+
+.card-skeleton.balance .second {
+  width: 100px;
+}
+
+.card-skeleton.balance .third {
+  width: 120px;
+}
+
+.card-skeleton.balance .fourth {
+  margin-top: 30px;
+}
+
+.skeleton .line {
+  height: 25px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  background: rgba(130, 130, 130, 0.2);
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+  background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+  background-size: 800px 100px;
+  animation: wave-lines 2s infinite ease-out;
+}
+
+.skeleton-container {
+  margin: 0 20px;
+  width: 96%;
+}
+
+.skeleton .line:last-child{
+  margin-bottom: 0;
+}
+
+.skeleton.action-skeleton {
+  display: block;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.skeleton.action-skeleton .circular {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 10px auto 20px;
+}
+
+.banner-skeleton {
+  margin-bottom: 30px;
+}
+.banner-skeleton .line {
+  border-radius: 20px;
+  height: 80px;
+  width: 350px;
+}
+
+@keyframes wave-lines {
+  0% {
+      background-position: -468px 0;
+  }
+   100% {
+      background-position: 468px 0;
+  }
+}
+
+.size-containers .header {
+  height: 110px;
+}
+
+.size-containers #account-balance {
+  height: 50px;
+}
+
+.size-containers #inline-actions {
+  height: 142px;
+}
+
+.size-containers .disclaimer-banners {
+  height: 120px;
+}
+
+.size-containers .credit-card {
+  height: 136px;
+}

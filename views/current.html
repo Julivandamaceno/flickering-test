@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Flickering test</title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div id="main-container" class="main-container open-sans-nu size-containers">
+            <header id="header" class="header">
+            </header>
+            <main class="section-container">
+                <section id="account-balance" class="base-container account flex justify-between ml-15">
+                </section>
+                <section id="inline-actions" class="base-container inline-actions">
+                </section>
+                <section class="base-container card-actions">
+                    <div class="banner flex">
+                        <img src="/images/outlined_financial_card.svg" class="card-action-icon" />
+                        <p class="card-action-text">Beneficios Ultravioleta</p>
+                    </div>
+                    <div class="banner flex">
+                        <img src="/images/outlined_financial_nu_logo.svg" class="card-action-icon" />
+                        <p class="card-action-text">Meus cartões</p>
+                    </div>
+                </section>
+                <section id="banners" class="base-container base-container-separator disclaimer-banners">
+                </section>
+                <section class="base-container base-container-separator credit-card">
+                    <section id="credit-card-balance" class="flex justify-between">
+                    </section>
+                </section>
+                <section id="lending" class="base-container credit-card">
+                    <section class="flex justify-between">
+                        <div class="balance-container ml-15">
+                            <div class="skeleton card-skeleton balance">
+                                <div class="line first"></div>
+                                <div class="line second"></div>
+                                <div class="line third"></div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </body>
+    <script src="/javascripts/client.js"></script>
+</html>
