@@ -76,9 +76,11 @@ a {
 .main-container {
   width: 467px;
   max-height: 910px;
+  min-height: 910px;
   margin: 0 auto;
   overflow-x: hidden;
   background: #000;
+  position: relative;
 }
 
 .main-container::-webkit-scrollbar {
@@ -319,6 +321,17 @@ a {
   margin: 10px auto 20px;
 }
 
+.header-skeleton.skeleton.action-skeleton .circular {
+  width: 55px;
+  height: 55px;
+  margin: 0 0 30px 10px;
+}
+
+.header-skeleton.skeleton.action-skeleton .line:not(.circular) {
+  width: 140px;
+  margin-left: 10px;
+}
+
 .banner-skeleton {
   margin-bottom: 30px;
 }
@@ -356,3 +369,30 @@ a {
 .size-containers .credit-card {
   height: 136px;
 }
+
+.menu {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 225px;
+  transform: translate(-50%, 0);
+  animation: bounce 0.5s; 
+}
+
+.menu .menu-item {
+  padding: 20px 25px;
+  border-radius: 30px;
+}
+
+.menu .active {
+  background: #290F4C;
+}
+
+@keyframes bounce { 
+  from { 
+      transform: translate(-50%, 50%);
+  } 
+  to { 
+      transform: translate(-50%, 0);
+  } 
+} 

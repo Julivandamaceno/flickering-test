@@ -9,21 +9,7 @@
     </head>
     <body>
         <div id="main-container" class="main-container open-sans-nu size-containers">
-            <header class="header">
-                <div class="profile-actions-container flex justify-between ml-15">
-                    <a href="/" class="profile-photo-container">
-                        <img src="/flickering-test/public/images/profile.png" alt="Profile photo" class="profile-photo" />
-                    </a>
-                    <div class="controls">
-                        <a href="/" title="Esconder saldo" class="control-icon"><img src="/flickering-test/public/images/outlined_actions_visibility_off.svg" /></a>
-                        <a href="/" title="Central de ajuda" class="control-icon"><img src="/flickering-test/public/images/outlined_actions_help.svg" /></a>
-                        <a href="/" title="Central de proteção Ultravioleta" class="last"><img src="/flickering-test/public/images/outlined_actions_shield_check.svg" /></a>
-                    </div>
-                </div>
-                <div class="greeting">
-                    Olá, Julivan
-                </div>
-            </header>
+            <header class="header"></header>
             <main class="section-container">
                 <section id="account-balance" class="base-container account flex justify-between ml-15">
                     <div class="skeleton card-skeleton">
@@ -91,6 +77,11 @@
                 </section>
             </main>
         </div>
+        <menu class="menu flex">
+            <div class="menu-item active"><img src="/images/filled_actions_arrows_up_down.svg" class="card-action-icon" /></div>
+            <div class="menu-item"><img src="/images/outlined_financial_dollar_sign.svg" class="card-action-icon" /></div>
+            <div class="menu-item"><img src="/images/outlined_actions_shopping_bag.svg" class="card-action-icon" /></div>
+        </menu>
     </body>
     <script src="/flickering-test/public/javascripts/client.js"></script>
 </html>
