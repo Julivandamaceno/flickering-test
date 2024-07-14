@@ -10,11 +10,11 @@
     setTimeout(() => {
         getHeader();
         getAccountBalance();
-    }, 1000)
+    }, 400)
     
     setTimeout(() => {
         getInlineActions();
-    }, 1200)
+    }, 500)
 
     setTimeout(() => {
         getBanners();
