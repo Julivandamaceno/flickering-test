@@ -11,7 +11,7 @@ var app = express();
 
 // view engine setup
 app.engine('html', cons.swig)
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname));
 app.set('view engine', 'html');
 
 app.use(logger('dev'));
@@ -21,7 +21,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/account-balance', indexRouter);
+app.use(function(req, res, next) {
+  if (req.url.indexOf('/flickering-test/') !== -1) {
+    let url = req.url.replace('/flickering-test/public/', '/');
+    res.redirect(url);
+  }
+  
+  next();
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
