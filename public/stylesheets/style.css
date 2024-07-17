@@ -106,6 +106,10 @@ a {
   transition: all linear 0.5s;
 }
 
+.without-fade .fade {
+  transition: none;
+}
+
 .show {
   opacity: 1;
 }
@@ -115,6 +119,10 @@ a {
 
 .ml-15 {
   margin-left: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .base-container-separator {

@@ -33,4 +33,12 @@ router.get('/current', function(req, res, next) {
   res.render('current');
 });
 
+router.get('/shopping', function(req, res, next) {
+  res.render('shopping');
+});
+
+router.get('/without-skeleton-fade', function(req, res, next) {
+  res.render('without-skeleton-fade');
+});
+
 module.exports = router;
