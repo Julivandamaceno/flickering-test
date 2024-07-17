@@ -380,11 +380,13 @@ a {
 
 .menu {
   position: absolute;
+  background: rgba(0, 0, 0, 0.9);
   bottom: 30px;
   left: 50%;
   width: 225px;
   transform: translate(-50%, 0);
   animation: bounce 0.5s; 
+  border-radius: 30px;
 }
 
 .menu .menu-item {

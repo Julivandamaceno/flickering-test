@@ -1,0 +1,154 @@
+.shopping .header .greeting {
+    display: none;
+}
+
+.shopping .size-containers .header {
+    height: 55px;
+}
+
+.shopping .article-container {
+    padding: 20px;
+}
+
+.shopping .search-field-container {
+    border-radius: 20px;
+    background: #201F21;
+    width: 90%;
+    align-items: center;
+}
+
+.shopping .search-field-container img {
+    width: 25px;
+    margin: 0 20px;
+}
+
+.shopping .search-field {
+    outline: none;
+    background: #201F21;
+    border: none;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.shopping .icon-button {
+    background: #201F21;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    align-content: center;
+    text-align: center;
+}
+
+.shopping .button {
+    border-radius: 20px;
+    background: #201F21;
+    padding: 10px 20px;
+    width: 50%;
+    text-align: center;
+    font-size: 13px;
+    align-content: center;
+}
+
+.shopping .button .box {
+    width: 13px;
+    height: 13px;
+}
+
+.shopping .button img {
+    margin-right: 10px;
+}
+
+.shopping .button.first {
+    margin-right: 10px;
+}
+
+.shopping-banner {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #290F4C;
+}
+
+.shopping-banner img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.shopping-banner .logo {
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.shopping-banner .sub-text {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.shopping-banner .sub-text strong {
+    font-weight: 500;
+}
+
+.shopping .section-title {
+    margin-bottom: 20px;
+}
+.shopping .shopping-subtitle {
+    color: #736E79;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sellers-carousel {
+    font-weight: 200;
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sellers-carousel strong {
+    font-weight: 600;
+}
+
+.sellers-carousel .seller {
+    margin-right: 40px;
+    font-size: 12px;
+}
+.sellers-carousel .seller.last {
+    margin-right: 0;
+}
+
+.sellers-carousel .seller-image {
+    width: 100%;
+}
+
+.sellers-carousel .seller-image img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0 auto 10px auto;
+    border: 1px solid #736E79;
+    background: #fff;
+}
+
+.highlight-banners::-webkit-scrollbar {
+    display: none;
+}
+
+.shopping .highlight-banners-container {
+    overflow: hidden;
+}
+
+.shopping .highlight-banners {
+    overflow-x: scroll;
+}
+
+.shopping .highlight-banners .h-banner {
+    margin-right: 20px;
+}
+
+.shopping .highlight-banners img {
+    width: 300px;
+}
