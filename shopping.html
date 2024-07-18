@@ -9,57 +9,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body class="shopping">
-        <div id="main-container" class="main-container open-sans-nu size-containers">
+        <div id="main-container" class="main-container open-sans-nu without-fade">
             <header id="header" class="header">
                 <div class="skeleton action-skeleton header-skeleton">
                     <div class="line circular first"></div>
                 </div>
             </header>
             <main class="section-container">
-                <article class="article-container search flex">
-                    <div class="search-field-container flex">
-                        <img src="/flickering-test/public/images/outlined_navigation_search.svg" />
-                        <input type="text" class="search-field" placeholder="Buscar no Shopping" />
+                <article id="search" class="article-container search">
+                    <div class="skeleton card-skeleton flex">
+                        <div class="line first"></div>
+                        <div class="line circular first"></div>
                     </div>
-                    <div class="cart icon-button"><img src="/flickering-test/public/images/outlined_categories_shopping_cart.svg" /></div>
                 </article>
-                <article class="article-container shopping-actions flex">
-                    <a href="#" class="button first"><img src="/flickering-test/public/images/box.png" class="box" />Meus pedidos</a>
-                    <a href="#" class="button"><img src="/flickering-test/public/images/outlined_financial_cashback.svg" /> ....</a>
+                <article id="shopping-actions" class="article-container shopping-actions">
+                    <div class="skeleton card-skeleton flex">
+                        <div class="line first"></div>
+                        <div class="line second"></div>
+                    </div>
                 </article>
-                <article class="article-container">
-                    <div class="shopping-banner flex">
-                        <div class="logo">
-                            <img src="/flickering-test/public/images/uber.png" />
-                        </div>
-                        <div>
-                            <p>Economize no próximo mês 🎉</p>
-                            <p class="sub-text">Usando Gift Cards você chama o Uber com desconto a partir de <strong>2%</strong> <strong class="highlight-text">Saiba mais &gt;</strong></p>
-                        </div>
-                    </div> 
+                <article id="shopping-banner" class="shopping-banner-container article-container">
+                    <div class="skeleton card-skeleton flex">
+                        <div class="line first"></div>
+                    </div>
                 </article>
-                <article class="article-container best-cashbacks">
-                    <p class="shopping-title section-title">Melhores cashbacks da semana</p>
+                <article id="sellers-carousel" class="article-container best-cashbacks">
                     <div class="sellers-container">
-                        <div class="sellers-carousel flex">
-                            <div class="seller"><div class="seller-image"><img src="/flickering-test/public/images/seller-amazon.png" /></div>Amazon<br /><strong>Até 3%</strong></div>
-                            <div class="seller"><div class="seller-image"><img src="/flickering-test/public/images/seller-nike.png" /></div>Nike<br /><strong>15%</strong></div>
-                            <div class="seller"><div class="seller-image"><img src="/flickering-test/public/images/seller-dzarm.svg" /></div>Dzarm<br /><strong>13.5%</strong></div>
-                            <div class="seller"><div class="seller-image"><img src="/flickering-test/public/images/seller-udemy.jpg" /></div>Udemy<br /><strong>5%</strong></div>
-                            <div class="seller last"><div class="seller-image"><img src="/flickering-test/public/images/seller-insider.png" /></div>Insider<br /><strong>Até 25%</strong></div>
+                        <div class="skeleton-container sellers-skeleton">
+                            <div class="skeleton title">
+                                <div class="line first"></div>
+                            </div>
+                            <div class="flex">
+                                <div class="skeleton action-skeleton">
+                                    <div class="line circular first"></div>
+                                    <div class="line second"></div>
+                                </div>
+                                <div class="skeleton action-skeleton">
+                                    <div class="line circular first"></div>
+                                    <div class="line second"></div>
+                                </div>
+                                <div class="skeleton action-skeleton">
+                                    <div class="line circular first"></div>
+                                    <div class="line second"></div>
+                                </div>
+                                <div class="skeleton action-skeleton">
+                                    <div class="line circular first"></div>
+                                    <div class="line second"></div>
+                                </div>
+                                <div class="skeleton action-skeleton last">
+                                    <div class="line circular first"></div>
+                                    <div class="line second"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
                 <section class="highlight-banners-container">
-                    <article class="article-container highlight-banners flex">
-                        <div class="h-banner"><img src="/flickering-test/public/images/banner.png" /></div>
-                        <div class="h-banner"><img src="/flickering-test/public/images/banner.png" /></div>
+                    <article id="highlight-banners" class="article-container highlight-banners flex">
+                        <div class="skeleton card-skeleton flex">
+                            <div class="line first"></div>
+                            <div class="line second"></div>
+                        </div>
                     </article>
                 </section>
-                <article class="article-container highlight-by-department">
-                    <p class="shopping-title section-title">Destaques em smartphones</p>
-                    <p class="shopping-subtitle">Confira os mais vendidos da Amazon</p>
-                    <img src="/flickering-test/public/images/banner-full.png" class="w-full" />
+                <article id="highlight-by-department" class="article-container highlight-by-department">
+                    <div class="skeleton card-skeleton">
+                        <div class="line first"></div>
+                        <div class="line second"></div>
+                        <div class="line third"></div>
+                    </div>
                 </article>
             </main>
         </div>
@@ -70,4 +88,5 @@
         </menu>
     </body>
     <script src="/flickering-test/public/javascripts/client.js"></script>
+    <script src="/flickering-test/public/javascripts/client.shopping.js"></script>
 </html>
